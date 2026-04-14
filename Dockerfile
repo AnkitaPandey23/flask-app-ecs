@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 #Run the necessary commands required to install the application
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 #Indicate the port used (here its is only for doocumentation)
 EXPOSE 80
