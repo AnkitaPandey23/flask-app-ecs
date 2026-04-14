@@ -21,4 +21,6 @@ jobs:
               with:
                 context: .
                 push: true
-                tags: ${{ vars.DOCKERHUB_USERNAME }}/flask-app-ecs:latest
+                tags: |
+                    ${{ vars.DOCKERHUB_USERNAME }}/flask-app-ecs:latest
+                    ${{ vars.DOCKERHUB_USERNAME }}/flask-app-ecs:${{ github.sha }}
