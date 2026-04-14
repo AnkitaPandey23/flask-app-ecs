@@ -27,6 +27,7 @@ COPY --from=builder /app .
 #Specifying the path
 ENV PYTHONPATH="/app/libraries"
 
+#only for documentation purpose
 EXPOSE 80
 
 CMD ["run.py"]
